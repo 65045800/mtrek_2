@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="26" inline="false" x="74" y="58">
-    <field name="MODE">WHILE</field>
+    <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="33">
         <field name="OBJECT">ENTER</field>
@@ -18,6 +18,28 @@
             <field name="NUM">93</field>
           </block>
         </value>
+        <next>
+          <block type="robot_delay" id="85" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="92">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="102">
+                <next>
+                  <block type="robot_delay" id="103" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="104">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </statement>
     <next>
