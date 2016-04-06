@@ -1,0 +1,10 @@
+{
+    "name": "mtrek_2",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "mtrek_2.xml",
+    "author": "65045800",
+    "minimum_firmware_version": 42
+}
