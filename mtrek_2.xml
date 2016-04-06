@@ -8,7 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="111" inline="false">
-        <mutation elseif="2"></mutation>
+        <mutation elseif="3"></mutation>
         <value name="IF0">
           <block type="sensor_button" id="118">
             <field name="OBJECT">UP</field>
@@ -43,6 +43,14 @@
         </value>
         <statement name="DO2">
           <block type="movement_right" id="146"></block>
+        </statement>
+        <value name="IF3">
+          <block type="sensor_button" id="153">
+            <field name="OBJECT">DOWN</field>
+          </block>
+        </value>
+        <statement name="DO3">
+          <block type="movement_reverse" id="163"></block>
         </statement>
         <next>
           <block type="robot_delay" id="85" inline="true">
