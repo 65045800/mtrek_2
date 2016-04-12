@@ -1,73 +1,73 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="26" inline="false" x="74" y="58">
+  <block type="controls_whileUntil" id="1" inline="false" x="74" y="58">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="33">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="111" inline="false">
+      <block type="controls_if" id="3" inline="false">
         <mutation elseif="3"></mutation>
         <value name="IF0">
-          <block type="sensor_button" id="118">
+          <block type="sensor_button" id="4">
             <field name="OBJECT">UP</field>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_setmotors" id="52" inline="true">
+          <block type="movement_setmotors" id="5" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_number" id="66">
+              <block type="math_number" id="6">
                 <field name="NUM">100</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="65">
+              <block type="math_number" id="7">
                 <field name="NUM">93</field>
               </block>
             </value>
           </block>
         </statement>
         <value name="IF1">
-          <block type="sensor_button" id="124">
+          <block type="sensor_button" id="8">
             <field name="OBJECT">LEFT</field>
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_left" id="135"></block>
+          <block type="movement_left" id="9"></block>
         </statement>
         <value name="IF2">
-          <block type="sensor_button" id="125">
+          <block type="sensor_button" id="10">
             <field name="OBJECT">RIGHT</field>
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_right" id="146"></block>
+          <block type="movement_right" id="11"></block>
         </statement>
         <value name="IF3">
-          <block type="sensor_button" id="185">
+          <block type="sensor_button" id="12">
             <field name="OBJECT">DOWN</field>
           </block>
         </value>
         <statement name="DO3">
-          <block type="movement_reverse" id="195"></block>
+          <block type="movement_reverse" id="13"></block>
         </statement>
         <next>
-          <block type="robot_delay" id="85" inline="true">
+          <block type="robot_delay" id="14" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="92">
+              <block type="math_number" id="15">
                 <field name="NUM">5000</field>
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="102"></block>
+              <block type="movement_stop" id="16"></block>
             </next>
           </block>
         </next>
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="83"></block>
+      <block type="movement_stop" id="17"></block>
     </next>
   </block>
 </xml>
